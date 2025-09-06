@@ -1,0 +1,65 @@
+.report-card {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 0.9;
+    background-color: var(--primary-orange-300);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.report-card img {
+    position: absolute;
+    top: -0.5em;
+    right: 1rem;
+}
+
+.report-card .card-body {
+    height: 80%;
+    width: 100%;
+    background-color: var(--neutral-navy-900);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 20%;
+    position: absolute;
+}
+
+.card-body .current-hours {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+}
+
+.card-body .previous-hours {
+    color: var(--neutral-purple-500);
+    font-size: 0.9rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-title h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.4;
+    line-height: 1.4;
+}
+
+.card-title img {
+    position: static;
+    margin-left: 0.5em;
+}
+
+.card-info {
+    /* color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
