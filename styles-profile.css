@@ -51,16 +51,21 @@ input[type="radio"]:checked+label {
     color: var(--navy-200);
 }
 
+@media screen and ((max-width: 768px) and (min-width: 376px)) {
+   
+#timeframe-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    color: var(--purple-500);
+    padding: 1.75rem 2rem;
+}
+}
+
 @media screen and ((max-width: 768px)) {
     .header {
         width: 100%;
-    }
-
-    .header ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 1.25rem;
     }
 
     .header .profile {
@@ -74,7 +79,6 @@ input[type="radio"]:checked+label {
     .header .profile img {
         width: 64px;
         height: 64px;
-        /* margin-bottom: 0; */
     }
 
     .header .profile h1 {
