@@ -1,21 +1,32 @@
 .report-card {
     display: block;
+    box-sizing: border-box;
     width: 100%;
     aspect-ratio: 1 / 0.9;
     background-color: var(--primary-orange-300);
     border-radius: 1rem;
-    overflow: hidden;
     position: relative;
 }
+.card-image-wrapper {
+  position: absolute;
+  right: 0;
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  padding-right: 1rem;
+  overflow: hidden;
+  z-index: 1;
+}
 
-.report-card img {
-    position: absolute;
-    top: -0.5em;
-    right: 1rem;
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin-top: -0.75rem;
 }
 
 .report-card .card-body {
-    height: 80%;
+    margin-top: 2.5rem;
+    box-sizing: border-box;
+    height: auto;
     width: 100%;
     background-color: var(--neutral-navy-900);
     border-radius: 1rem;
@@ -23,8 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 20%;
-    position: absolute;
+    z-index: 2;
 }
 
 .card-body .current-hours {
@@ -58,8 +68,43 @@
 }
 
 .card-info {
-    /* color: red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+@media screen and (max-width: 375px) {
+    .report-card {
+        height: auto;
+        width: 100%;
+        aspect-ratio: unset;
+    }
+
+    .card-body {
+        height: auto;
+        position: relative;
+    }
+
+    .card-body .current-hours {
+        font-size: 2rem;
+        font-weight: lighter;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+        margin-bottom: 0.5rem;
+    }
+
+    .card-body .previous-hours {
+        color: var(--neutral-purple-500);
+        font-size: 0.9rem;
+    }
+
+    .card-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
