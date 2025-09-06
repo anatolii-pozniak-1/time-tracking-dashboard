@@ -4,18 +4,18 @@
 }
 
 :root {
-    --primary-purple-600: hsl(246, 80%, 60%);
-    --primary-orange-300: hsl(15, 100%, 70%);
-    --primary-blue-300: hsl(195, 74%, 62%);
-    --primary-pink-400: hsl(348, 100%, 68%);
-    --primary-green-400: hsl(145, 58%, 55%);
-    --primary-purple-700: hsl(264, 64%, 52%);
-    --primary-yellow-300: hsl(43, 84%, 65%);
+    --purple-600: hsl(246, 80%, 60%);
+    --orange-300: hsl(15, 100%, 70%);
+    --blue-300: hsl(195, 74%, 62%);
+    --pink-400: hsl(348, 100%, 68%);
+    --green-400: hsl(145, 58%, 55%);
+    --purple-700: hsl(264, 64%, 52%);
+    --yellow-300: hsl(43, 84%, 65%);
 
-    --neutral-navy-950: hsl(226, 43%, 10%);
-    --neutral-navy-900: hsl(235, 46%, 20%);
-    --neutral-purple-500: hsl(235, 45%, 61%);
-    --neutral-navy-200: hsl(236, 100%, 87%);
+    --navy-950: hsl(226, 43%, 10%);
+    --navy-900: hsl(235, 46%, 20%);
+    --purple-500: hsl(235, 45%, 61%);
+    --navy-200: hsl(236, 100%, 87%);
 }
 
 * {
@@ -28,7 +28,7 @@
 }
 
 body {
-    background-color: var(--neutral-navy-950);
+    background-color: var(--navy-950);
     color: white;
     display: flex;
     justify-content: center;
@@ -72,9 +72,12 @@ main {
         grid-template-columns: repeat(1, 1fr);
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-auto-rows: 1fr;
+        /* grid-auto-rows: 1fr; */
+            grid-auto-rows: min-content;
 
-        gap: 2rem;
+        align-items: start;
+
+        gap: 2rem 2rem;
         padding: 2rem;
     }
 

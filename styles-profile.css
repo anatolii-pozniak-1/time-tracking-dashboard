@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--neutral-navy-900);
+    background-color: var(--navy-900);
     border-radius: 1rem;
 }
 
@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    background-color: var(--primary-purple-600);
+    background-color: var(--purple-600);
     border-radius: 1rem;
 }
 
@@ -29,27 +29,30 @@
 
 .header .profile p {
     font-size: 0.9rem;
-    color: var(--neutral-navy-200);
+    color: var(--navy-200);
 }
 
-.header ul {
+#timeframe-group {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    list-style: none;
-    color: var(--neutral-purple-500);
+    color: var(--purple-500);
     padding: 1.75rem 2rem;
 }
 
-.header ul li:hover {
-    color: white;
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-
-
+input[type="radio"]:checked+label {
+    color: var(--navy-200);
+}
 
 @media screen and ((max-width: 768px)) {
-    .header{
+    .header {
         width: 100%;
     }
 
@@ -79,4 +82,3 @@
     }
 
 }
-

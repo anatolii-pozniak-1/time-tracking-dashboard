@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="styles-card.css" />
   <link rel="stylesheet" href="styles-profile.css" />
+  <script src="script.js" defer></script>
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -28,7 +29,7 @@
 </head>
 
 <body>
-  <main>
+  <main id="main">
     <div class="header">
       <div class="profile">
         <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="profile-pic">
@@ -37,91 +38,18 @@
           <h1>Jeremy Robson</h1>
         </div>
       </div>
-      <ul>
-        <li>Daily</li>
-        <li>Weekly</li>
-        <li>Monthly</li>
-      </ul>
-    </div>
 
-    <div class="report-card">
-      <div class="card-image-wrapper">
-        <img src="./images/icon-work.svg" alt="Work Icon">
-      </div>
-      <div class="card-body">
-        <div class="card-title">
-          <h2>Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon">
-        </div>
-        <div class="card-info">
-          <p class="current-hours">32hrs</p>
-          <p class="previous-hours">Previous - 36hrs</p>
-        </div>
-      </div>
-    </div>
-        <div class="report-card">
-      <div class="card-image-wrapper">
-        <img src="./images/icon-work.svg" alt="Work Icon">
-      </div>
-      <div class="card-body">
-        <div class="card-title">
-          <h2>Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon">
-        </div>
-        <div class="card-info">
-          <p class="current-hours">32hrs</p>
-          <p class="previous-hours">Previous - 36hrs</p>
-        </div>
-      </div>
-    </div>
-        <div class="report-card">
-      <div class="card-image-wrapper">
-        <img src="./images/icon-work.svg" alt="Work Icon">
-      </div>
-      <div class="card-body">
-        <div class="card-title">
-          <h2>Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon">
-        </div>
-        <div class="card-info">
-          <p class="current-hours">32hrs</p>
-          <p class="previous-hours">Previous - 36hrs</p>
-        </div>
-      </div>
-    </div>
-        <div class="report-card">
-      <div class="card-image-wrapper">
-        <img src="./images/icon-work.svg" alt="Work Icon">
-      </div>
-      <div class="card-body">
-        <div class="card-title">
-          <h2>Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon">
-        </div>
-        <div class="card-info">
-          <p class="current-hours">32hrs</p>
-          <p class="previous-hours">Previous - 36hrs</p>
-        </div>
-      </div>
-    </div>
-        <div class="report-card">
-      <div class="card-image-wrapper">
-        <img src="./images/icon-work.svg" alt="Work Icon">
-      </div>
-      <div class="card-body">
-        <div class="card-title">
-          <h2>Work</h2>
-          <img src="./images/icon-ellipsis.svg" alt="Ellipsis Icon">
-        </div>
-        <div class="card-info">
-          <p class="current-hours">32hrs</p>
-          <p class="previous-hours">Previous - 36hrs</p>
-        </div>
-      </div>
-    </div>
-    
-    </div>
+      <div id="timeframe-group">
+        <input type="radio" name="timeframe" value="daily" id="daily" checked>
+        <label for="daily">Daily</label>
 
+        <input type="radio" name="timeframe" value="weekly" id="weekly">
+        <label for="weekly">Weekly</label>
+
+        <input type="radio" name="timeframe" value="monthly" id="monthly">
+        <label for="monthly">Monthly</label>
+      </div>
+    </div>
   </main>
 </body>
 

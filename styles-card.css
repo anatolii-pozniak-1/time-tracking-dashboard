@@ -3,7 +3,7 @@
     box-sizing: border-box;
     width: 100%;
     aspect-ratio: 1 / 0.9;
-    background-color: var(--primary-orange-300);
+    background-color: var(--orange-300);
     border-radius: 1rem;
     position: relative;
 }
@@ -28,7 +28,7 @@
     box-sizing: border-box;
     height: auto;
     width: 100%;
-    background-color: var(--neutral-navy-900);
+    background-color: var(--navy-900);
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
@@ -44,7 +44,7 @@
 }
 
 .card-body .previous-hours {
-    color: var(--neutral-purple-500);
+    color: var(--purple-500);
     font-size: 0.9rem;
 }
 
@@ -97,7 +97,7 @@
     }
 
     .card-body .previous-hours {
-        color: var(--neutral-purple-500);
+        color: var(--purple-500);
         font-size: 0.9rem;
     }
 
